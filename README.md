@@ -42,7 +42,7 @@ shape_functions = GetShapeFunctions(model = litboost_model,
                                     variables = c("X1", "X3"))
 ```
 An example of the resulting shape functions: 
-<img src="shape_functions.pdf" width="100%" />
+<img src="shape_functions.png" width="80%" />
 
 
 
