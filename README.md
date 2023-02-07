@@ -2,8 +2,8 @@
 Locally Interpretable Tree Boosting
 LitBoost is a tree boosting method that is tailored for problems where the data set consists of several known categories, for instance city cistricts in a house price prediction scenario. By using interaction constraints in Graident Boosted Trees (GBT), for instance XGBoost, we are able to create a set of jointly trained local models that inherit the interpretability benefits of a Generalized Additive Model, while achieiving prediction accuracy that is close to that of the state-of-the-art GBT in scenarios where we have multiple groups with few observations ($<100$) per group. 
 
-# Example
-Generate data according to the process described in our paper: 
+# Vignette
+A working example can be found in in the file ```litboost_vignette.R```. First we generate data according to the process described in our paper: 
 ```
 library(xgboost)
 library(DiagrammeR)
