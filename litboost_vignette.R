@@ -1,3 +1,11 @@
+source("helper_functions.R")
+library(xgboost)
+library(DiagrammeR)
+library(mltools)
+library(tidyverse)
+library(dplyr)
+
+
 # Simulate data 
 friedman_data = SimulateData(N = 1000, K = 3, sigma = 0.1)
 sim_data = friedman_data$sim_data
