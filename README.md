@@ -4,7 +4,7 @@ LitBoost is a tree boosting method that is tailored for problems where the data 
 
 # Vignette
 A working example can be found in in the file ```litboost_vignette.R```. First we generate data according to the process described in our paper: 
-```
+``` r
 library(xgboost)
 library(DiagrammeR)
 library(mltools)
@@ -27,7 +27,7 @@ Train a LitBoost model:
 
 
 
-```
+``` r
 model_formula = formula(paste("y ~", paste(names(df[,-1]), collapse = "+")))
 
 # Run LitBoost 
@@ -35,13 +35,15 @@ litboost_model = litboost.train(train_df = df, model_formula = model_formula)
 litboost_preds = litboost.predict(model = litboost_model, test_df = test_df, model_formula = model_formula)
 ```
 Access the shape functions in order to get a fully interpretable model: 
-```
+``` r
 shape_functions = GetShapeFunctions(model = litboost_model,
                                     formula = model_formula, 
                                     train_df = train_df, 
                                     variables = c("X1", "X3"))
 ```
 An example of the resulting shape functions: 
+<img src="shape_functions.pdf" width="100%" />
+
 
 
 # Citation
