@@ -1,6 +1,6 @@
 # LitBoost
 Locally Interpretable Tree Boosting
-LitBoost is a tree boosting method that is tailored for problems where the data set consists of several known categories, for instance city cistricts in a house price prediction scenario. By using interaction constraints in Graident Boosted Trees (GBT), for instance XGBoost ([Chen & Guestrin (2016)](https://arxiv.org/pdf/1603.02754.pdf)), we are able to create a set of jointly trained local models that inherit the interpretability benefits of a Generalized Additive Model, while achieiving prediction accuracy that is close to that of the state-of-the-art GBT in scenarios where we have multiple groups with few observations per group. The work is partly building on the work of Microsot on [Explainable Boosting Machine](https://interpret.ml/docs/ebm.html). 
+LitBoost is a tree boosting method that is tailored for problems where the data set consists of several known categories, for instance city cistricts in a house price prediction scenario. By using interaction constraints in Graident Boosted Trees (GBT), for instance XGBoost ([Chen & Guestrin (2016)](https://arxiv.org/pdf/1603.02754.pdf)), we are able to create a set of jointly trained local models that inherit the interpretability benefits of a Generalized Additive Model, while achieiving prediction accuracy that is close to that of the state-of-the-art GBT in scenarios where we have multiple groups with few observations per group. The work is partly building on the work of Microsoft on [Explainable Boosting Machine](https://interpret.ml/docs/ebm.html). 
 
 # Vignette
 A working example can be found in in the file ```litboost_vignette.R```. First we generate data according to the process described in our paper: 
@@ -47,7 +47,7 @@ An example of the resulting shape functions:
 
 
 # Citation
-Consider citing our paper if this work interests you: 
+Consider citing our paper if this work interests you (arxiv link coming soon): 
 
 ```
 @misc{LitBoost,
@@ -58,3 +58,4 @@ Consider citing our paper if this work interests you:
 ```
 
 # References
+To be written. 
